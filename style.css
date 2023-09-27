@@ -1,0 +1,245 @@
+:root
+{
+    --color-1:#CB6564;
+    --color-2:#035b84;
+}
+*{
+    margin: 0;
+    font-family: "Poppins";
+}
+
+a
+{
+    text-decoration: none;
+}
+ul
+{
+    list-style:  none;
+}
+img{
+    width: 60px;
+}
+
+body{
+    min-height: 200vh;
+    background-color: var(--color-1);
+}
+
+header {
+    background-color: var(--color-2);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-1);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+}
+
+header * {
+    color:var(--color-1);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo img{
+    width: 43px;
+    height: 43px;
+    object-fit: contain;
+}
+.logo h1 {
+    font-size: 20px;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+header ul .active
+{
+    font-weight: 600;
+}
+
+header .btn {
+    background-color: var(--color-1);
+    color: var(--color-2);
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+@media screen and (max-width:567px) {
+    
+    header .logo h1{
+        display: none;
+
+    }
+    header a {
+        font-size: 11px;
+    }
+}   
+
+/* SECTION 1 - hOME */
+.Home{
+    padding-top: 100px;
+    display: flex;
+    background-color: #035b84;
+    min-height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.Home *{
+    color: var(--color-1);
+}
+
+.Home img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.Home svg{
+    width: 25px;
+    stroke: var(--color-2);
+}
+
+.Home .text-area h4,
+.Features .text-area h4
+{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.Home .text-area h1,
+.Features .text-area h1
+{
+    font-size: 50px;
+    
+}
+
+.Home .text-area p,
+.Features .text-area p
+{
+    margin-bottom: 10px;
+}
+
+.Home .text-area a span{
+    background-color: var(--color-1);
+    color: var(--color-2);
+    display: flex;
+    align-items: center;
+    width: 102px;
+    padding: 5px;
+    border-radius: 20px ;
+}
+
+.Features .text-area *{
+    color: var(--color-2);
+    text-align: center;
+}
+.Features {
+    padding: 70px;
+
+}
+.Features .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 20%;
+    margin-top: 20px;
+    justify-content: center;
+
+}.Features .cards .card {
+    background-color: var(--color-2);
+    padding: 30x;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 275px;
+    border-radius: 12px;
+}
+
+.Features .card h5 {
+    font-size: 20px;
+    color: #CB6564;
+}
+.Features .card p {
+    font-size: 14px;
+    color: #CB6564;
+}
+.Contact {
+    margin-top: 20px;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+.Contact .Contact-left {
+    grid-column: 2/6;
+    color: var(--color-2);
+}
+.Contact-left h4 {
+    font-size: 25px;
+}
+.Contact form {
+    grid-column: 8/12;
+}
+.Contact form input,
+.Contact form textarea {
+    background-color: transparent;
+    border: unset;
+    border: 1px solid var(--color-2);
+    color: var(--color-2);
+    width: 80%;
+    padding: 12px 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.Contact form input::placeholder {
+    color: var(--color-2);
+}
+.Contact form svg{
+    width: 20px;
+}
+.Contact form button {
+    background-color: var(--color-2);
+    border: none;
+    padding: 10px 15px;
+    color: var(--color-1);
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+footer {
+    background-color: var(--color-2);
+    display: grid;
+    grid-template-columns: repeat(3.1fr);
+    padding: 20px;
+}
+footer .footer-left,
+.footer-right *{
+    color: var(--color-1);
+}
+.footer-right {
+    grid-column: 2/4;
+    display: grid;
+    grid-template-columns: repeat(3,220px);
+}
+.social-media{
+    grid-column: 2;
+    margin-top: 10px;
+}
+.social-media img{
+    width: 20px;
+    object-fit: contain;
+}
